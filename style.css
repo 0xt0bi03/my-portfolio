@@ -12,34 +12,34 @@
 
 body
 {
-    background-color: #282828;
-    color: #EBDBB2;
-    padding-left: 20px;
-    padding-top: 10px;
-    font-family: aquarius;
+  background-color: #282828;
+  color: #EBDBB2;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-family: aquarius;
 }
-
-.word {
+  
+.word 
+{
   width: 0ch;
-  white-space: nowrap;
   overflow: hidden;
-  /* font-family: monospace; */
+  white-space: nowrap;
   animation: typing 1s steps(300) forwards;
 }
 
+.word a
+{
+  text-decoration: none;
+  color: #EBDBB2;
+}
+
+
 /* 
 🌲 Gruvbox-Inspired Retro Geek
-
 Warm, earthy, cozy terminal
-
 Background: Dark Brown #282828
-
 Foreground: Cream #EBDBB2
-
 Accent: Orange #FE8019
-
 Green: Muted Green #B8BB26
-
 Red: Soft Red #FB4934
-
 💡 Why: Very popular among TUI power users for a reason. */
