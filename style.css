@@ -15,29 +15,77 @@
     display: none; 
   }
 }
+@keyframes gradient {
+  0% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: 400% 200%;
+  }
+}
+
 
 /* fonts */
 @font-face {
   font-family: 'aquarius';
   src: url('fonts/aquarius.regular-mono.ttf') format('truetype');
 }
+/* 
+🌲 Gruvbox-Inspired Retro Geek
+Warm, earthy, cozy terminal
+Background: Dark Brown #282828
+Foreground: Cream #EBDBB2
+Accent: Orange #FE8019
+Green: Muted Green #B8BB26
+Red: Soft Red #FB4934
+💡 Why: Very popular among TUI power users for a reason. */
 
 :root
 {
   --display: none;
   --height: 95vh;
-  --color: #EBDBB2;
-  --bgcolor: #282828;
+  --cream: #EBDBB2;
+  --darkbrown: #282828;
+  --orange: #FE8019;
+  --green: #B8BB26;
+  --red: #FB4934;
 }
 
-
+/*---------------------------------------------*/
+/* cursor */
+*{
+  cursor: none;
+  
+}
+*::selection
+{
+  background-color: var(--cream);
+  color: var(--darkbrown);
+}
+.cursor {
+  width: 15px;
+  height: 25px;
+  background-color: var(--cream);
+  /* border: 2px solid white; */
+  /* border-radius: 50%; */
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.15s ebackground 0.15s ease;
+  transform: translate(-50%, -50%);
+}
+.cursor:active
+{
+  transform: scale(0.9);
+}
 
 /*---------------------------------------------*/
 /* main css */
 .body
 {
-  background-color: var(--bgcolor);
-  color: var(--color);
+  /* form */
+  background-color: var(--darkbrown);
+  color: var(--green);
   padding-left: 20px;
   padding-top: 10px;
   font-family: aquarius;
@@ -52,6 +100,7 @@
 /* LOADING SCREEN */
 .loading
 {
+  color: var(--green);
   width: 500px;
   height: 500px;
   /* background-color:brown; */
@@ -67,7 +116,7 @@
 {
   width: 150px;
   height: 30px;
-  border: 3px solid var(--color);
+  border: 3px solid var(--cream);
   
   /* display */
   display: flex;
@@ -90,7 +139,7 @@
   width: 95%;
   height: 95%;
   opacity: 0;
-  background-color: var(--color);
+  background-color: var(--red);
   animation: loading 1s linear forwards;
 }
 .filler:nth-child(1)
@@ -132,31 +181,34 @@
 /* contents */
 #heading
 {
+  color: var(--orange);
   font-size: 30px;
   /* margin-top: 20px; */
   margin-bottom: 5px;
 }
-#github, #twitter, #codeforces
+#github, #twitter, #codeforces, #mail
 {
   font-size: 14px;
   text-decoration: none;
-  color: var(--color);
+  color: var(--cream);
 }
 #skill, #lang, #about
 {
+  color: var(--red);
   font-size: 24px;
   margin-bottom: 10px;
 }
 
 .title
 {
-  border: 3px solid var(--color);
+  border: 3px solid var(--cream);
   padding-left: 10px;
 }
 
 /* others content + animation */
 .others
 {
+  color: var(--orange);
   overflow: hidden;
   white-space: nowrap;
   animation: typing 1s steps(300) forwards;
@@ -169,8 +221,28 @@
 /* EFFECTS */
 #github:hover
 {
-  background-color: #1f2328;
-  color: #ffffff;
+  border-radius: 3px;
+  background: linear-gradient(to right, #b099fa, #432673, #22044b, #432673, #b099fa);
+  background-size: 200% 200%;
+  animation: gradient 1s linear infinite;
+}
+
+#codeforces:hover
+{
+  color: var(--darkbrown);
+  border-radius: 3px;
+  background: linear-gradient(to right, #FFCC00, #1f8acb, #E53935, #FFCC00);
+  background-size: 200% 200%;
+  animation: gradient 1s linear infinite;
+}
+
+#twitter:hover
+{
+  color: var(--darkbrown);
+  border-radius: 3px;
+  background: linear-gradient(to right, #1DA1F2, #ebf7ff, #1DA1F2);
+  background-size: 200% 200%;
+  animation: gradient 1s linear infinite;
 }
 
 
@@ -183,14 +255,3 @@
 
 
 
-
-
-/* 
-🌲 Gruvbox-Inspired Retro Geek
-Warm, earthy, cozy terminal
-Background: Dark Brown #282828
-Foreground: Cream #EBDBB2
-Accent: Orange #FE8019
-Green: Muted Green #B8BB26
-Red: Soft Red #FB4934
-💡 Why: Very popular among TUI power users for a reason. */

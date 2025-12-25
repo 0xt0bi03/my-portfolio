@@ -1,3 +1,14 @@
+// CUSTOM CURSOR -----------------------------
+const cursor = document.querySelector('.cursor');
+let mouseX = 0, mouseY = 0;
+document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+});
+
+
 // FUNCTION FOR TYPEWRITING EFFECT --------------------------
 function typewriting(element, text, speed = 5) {
     let index = 0;
@@ -19,10 +30,10 @@ function typewriting(element, text, speed = 5) {
 // CONTENT -------------------------------------------------
 const welcome = 'Hello, welcome to my website!';
 const title = "Hey, It's Tobi.";
-const subject = 'I am a software developer, from India.';
+const subject = 'I am a student who is learning Fullstack development, from India.';
 const skills = 'REACT';
 const languages ="HTML  CSS  JAVASCRIPT  C  C++  PYTHON";
-const aboutme = 'I am a 23 year old, fullstack developer from India. I love to program applications, debugging critical structures.';
+const aboutme = 'I am a 23 year old college student, from India. I love to program applications, debugging critical structures. Currently I am learning Fullstack Web/app development.';
 
 
 
@@ -34,6 +45,8 @@ function print()
     typewriting(msg, welcome);
     const heading = document.getElementById('heading');
     typewriting(heading, title);
+    const mail = document.getElementById('mail');
+    typewriting(mail, '>Mail');
     const github = document.getElementById('github');
     typewriting(github, '>Github');
     const twitter = document.getElementById('twitter');
