@@ -67,7 +67,7 @@
 {
   width: 150px;
   height: 30px;
-  border: 2px solid var(--color);
+  border: 3px solid var(--color);
   
   /* display */
   display: flex;
@@ -133,7 +133,8 @@
 #heading
 {
   font-size: 30px;
-  margin-bottom: 10px;
+  /* margin-top: 20px; */
+  margin-bottom: 5px;
 }
 #github, #twitter, #codeforces
 {
@@ -149,9 +150,6 @@
 
 .title
 {
-  /* display: flex;
-  align-items: baseline;
-  justify-content: space-between; */
   border: 3px solid var(--color);
   padding-left: 10px;
 }
@@ -169,11 +167,11 @@
 
 /*---------------------------------------------*/
 /* EFFECTS */
-/* #github:hover, #twitter:hover
+#github:hover
 {
   background-color: #1f2328;
   color: #ffffff;
-} */
+}
 
 
 
