@@ -30,15 +30,7 @@
   font-family: 'aquarius';
   src: url('fonts/aquarius.regular-mono.ttf') format('truetype');
 }
-/* 
-🌲 Gruvbox-Inspired Retro Geek
-Warm, earthy, cozy terminal
-Background: Dark Brown #282828
-Foreground: Cream #EBDBB2
-Accent: Orange #FE8019
-Green: Muted Green #B8BB26
-Red: Soft Red #FB4934
-💡 Why: Very popular among TUI power users for a reason. */
+
 
 :root
 {
@@ -194,9 +186,9 @@ Red: Soft Red #FB4934
   color: var(--red);
   font-size: 24px;
   margin-bottom: 10px;
+  text-wrap: wrap;
 }
-
-.title
+.box
 {
   border: 3px solid var(--cream);
   padding-left: 10px;
@@ -209,8 +201,26 @@ Red: Soft Red #FB4934
   white-space: nowrap;
   animation: typing 1s steps(300) forwards;
 }
+.bulletpoint
+{
+  text-wrap: wrap;
+}
+#chess
+{
+  text-decoration: none;
+  color: var(--green);
+}
+#abouttext
+{
+  white-space: pre-line;
+}
+#themecredit, #fontcredit
+{
+  text-decoration: none;
+  color: var(--cream);
+  /* padding: 15px; */
 
-
+}
 
 
 /*---------------------------------------------*/
@@ -227,7 +237,7 @@ Red: Soft Red #FB4934
 {
   color: var(--darkbrown);
   border-radius: 3px;
-  background: linear-gradient(to right, #e88f0a, #dedddd, #e88f0a);
+  background: linear-gradient(to right, #8d5500, #c87801, #dedddd, #c87801, #8d5500);
   background-size: 200% 200%;
   animation: gradient 1s linear infinite;
 }
@@ -248,9 +258,51 @@ Red: Soft Red #FB4934
   background-size: 200% 200%;
   animation: gradient 1s linear infinite;
 }
+#chess:hover
+{
+  color: var(--darkbrown);
+  border-radius: 3px;
+  background: linear-gradient(to right, #5d9948, #80b64c, #b3e069, #5d9948);
+  background-size: 200% 200%;
+  animation: gradient 1s linear infinite;
+  padding-left: 2px;
+}
 
+/* 
+🌲 Gruvbox-Inspired Retro Geek
+Warm, earthy, cozy terminal
+Background: Dark Brown #282828
+Foreground: Cream #EBDBB2
+Accent: Orange #FE8019
+Green: Muted Green #B8BB26
+Red: Soft Red #FB4934
+💡 Why: Very popular among TUI power users for a reason. */
 
+#themecredit:hover{
+  color: var(--darkbrown);
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  background: linear-gradient(
+    to right, #FE8019, #B8BB26, #FB4934, #FE8019
+  );
+  background-size: 200% 200%;
+  animation: gradient 1s linear infinite;
+}
+#fontcredit:hover {
+  color: var(--darkbrown);
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  /* background: linear-gradient(
+    to right,
+    #7760c1, #432673, #22044b, #432673, #7760c1
+  ); */
+  background: linear-gradient(to right, #0e8ede, #b7c7d2, #0e8ede);
 
+  background-size: 200% 200%;
+  animation: gradient 1s linear infinite;
+}
 
 
 
