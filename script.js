@@ -29,7 +29,7 @@ const aboutme = 'I am a 23 year old, fullstack developer from India. I love to p
 // ASSIGNING -------------------------------------------------
 function print()
 {
-    const idlist = ['msg', 'heading', 'summary', 'skill', 'skillist', 'lang', 'langlist', 'about', 'abouttext'];
+    // const idlist = ['msg', 'heading', 'summary', 'skill', 'skillist', 'lang', 'langlist', 'about', 'abouttext'];
     const msg = document.getElementById('msg');
     typewriting(msg, welcome);
     const heading = document.getElementById('heading');
@@ -38,6 +38,8 @@ function print()
     typewriting(github, '>Github');
     const twitter = document.getElementById('twitter');
     typewriting(twitter, '>Twitter');
+    const codeforces = document.getElementById('codeforces');
+    typewriting(codeforces, '>Codeforces');
     const summary = document.getElementById('summary');
     typewriting(summary, subject);
     const skill = document.getElementById('skill');

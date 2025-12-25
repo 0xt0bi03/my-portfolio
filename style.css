@@ -26,6 +26,8 @@
 {
   --display: none;
   --height: 95vh;
+  --color: #EBDBB2;
+  --bgcolor: #282828;
 }
 
 
@@ -34,8 +36,8 @@
 /* main css */
 .body
 {
-  background-color: #282828;
-  color: #EBDBB2;
+  background-color: var(--bgcolor);
+  color: var(--color);
   padding-left: 20px;
   padding-top: 10px;
   font-family: aquarius;
@@ -65,7 +67,7 @@
 {
   width: 150px;
   height: 30px;
-  border: 2px solid #EBDBB2;
+  border: 2px solid var(--color);
   
   /* display */
   display: flex;
@@ -88,7 +90,7 @@
   width: 95%;
   height: 95%;
   opacity: 0;
-  background-color: #EBDBB2;
+  background-color: var(--color);
   animation: loading 1s linear forwards;
 }
 .filler:nth-child(1)
@@ -124,7 +126,7 @@
 {
   display: var(--display);
   width: 800px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 
 /* contents */
@@ -133,18 +135,25 @@
   font-size: 30px;
   margin-bottom: 10px;
 }
-
-#github, #twitter
+#github, #twitter, #codeforces
 {
   font-size: 14px;
   text-decoration: none;
-  color: #EBDBB2;
+  color: var(--color);
 }
-
 #skill, #lang, #about
 {
   font-size: 24px;
   margin-bottom: 10px;
+}
+
+.title
+{
+  /* display: flex;
+  align-items: baseline;
+  justify-content: space-between; */
+  border: 3px solid var(--color);
+  padding-left: 10px;
 }
 
 /* others content + animation */
@@ -159,7 +168,12 @@
 
 
 /*---------------------------------------------*/
-
+/* EFFECTS */
+/* #github:hover, #twitter:hover
+{
+  background-color: #1f2328;
+  color: #ffffff;
+} */
 
 
 
