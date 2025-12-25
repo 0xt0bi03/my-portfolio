@@ -37,7 +37,7 @@ const aboutme = `I am a 23 year old college student, from India. Unfortunately, 
 
 I love to program applications, debug critical structures and solve real world problems. Currently I am learning Fullstack Web/app development. I love problem solving and analytical thinking. I do solve Leetcode and Codeforces apart from development.
 
-My gear consist of ASUS TUF A16 + RTX 2050`;
+My gear: ASUS TUF A16 + RTX 2050`;
 
 
 // ASSIGNING -------------------------------------------------
