@@ -63,6 +63,7 @@ Red: Soft Red #FB4934
   color: var(--darkbrown);
 }
 .cursor {
+  display: var(--display);
   width: 10px;
   height: 20px;
   background-color: var(--cream);
@@ -72,10 +73,7 @@ Red: Soft Red #FB4934
   transition: transform 0.15s ebackground 0.15s ease;
   transform: translate(-50%, -50%);
 }
-.cursor:active
-{
-  transform: scale(0.9);
-}
+
 
 /*---------------------------------------------*/
 /* main css */
@@ -172,7 +170,8 @@ Red: Soft Red #FB4934
 #frame
 {
   display: var(--display);
-  width: 800px;
+  width: 90%;
+  max-width: 800px;
   /* padding-left: 10px; */
 }
 
