@@ -54,11 +54,11 @@ function print()
     typewriting(abouttext, aboutme);
 }
 
+
+
 // LOADING TO MAIN SCREEN TRANSISITON ----------
 const loading_display = document.querySelector('.loading');
 
-// Wait for loading animation to complete
-// 5s delay + 0.4s fadeout animation = 5.4s total
 setTimeout(() => {
     loading_display.style.display = 'none';
     document.documentElement.style.setProperty('--display', 'block');
