@@ -10,29 +10,45 @@
   src: url('fonts/aquarius.regular-mono.ttf') format('truetype');
 }
 
-body
+.body
 {
   background-color: #282828;
   color: #EBDBB2;
   padding-left: 20px;
   padding-top: 10px;
   font-family: aquarius;
+  
+  /* display */
+  display: flex;
+  justify-content: center;
 }
   
-.word 
+/* .word 
 {
-  width: 0ch;
   overflow: hidden;
   white-space: nowrap;
   animation: typing 1s steps(300) forwards;
+} */
+
+#box
+{
+  
+  width: 800px;
+  height: 100vh;
 }
 
-.word a
+.title a
 {
   text-decoration: none;
   color: #EBDBB2;
 }
 
+/* 
+#text
+{
+  white-space: pre-wrap;
+  word-wrap: break-word;
+} */
 
 /* 
 🌲 Gruvbox-Inspired Retro Geek
