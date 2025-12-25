@@ -63,11 +63,9 @@ Red: Soft Red #FB4934
   color: var(--darkbrown);
 }
 .cursor {
-  width: 15px;
-  height: 25px;
+  width: 10px;
+  height: 20px;
   background-color: var(--cream);
-  /* border: 2px solid white; */
-  /* border-radius: 50%; */
   position: fixed;
   pointer-events: none;
   z-index: 9999;
@@ -192,7 +190,7 @@ Red: Soft Red #FB4934
   text-decoration: none;
   color: var(--cream);
 }
-#skill, #lang, #about
+#skill, #lang, #about, #interested, #hobbies
 {
   color: var(--red);
   font-size: 24px;
@@ -208,7 +206,6 @@ Red: Soft Red #FB4934
 /* others content + animation */
 .others
 {
-  color: var(--orange);
   overflow: hidden;
   white-space: nowrap;
   animation: typing 1s steps(300) forwards;
@@ -222,7 +219,7 @@ Red: Soft Red #FB4934
 #github:hover
 {
   border-radius: 3px;
-  background: linear-gradient(to right, #b099fa, #432673, #22044b, #432673, #b099fa);
+  background: linear-gradient(to right, #7760c1, #432673, #22044b, #432673, #7760c1);
   background-size: 200% 200%;
   animation: gradient 1s linear infinite;
 }
@@ -231,7 +228,7 @@ Red: Soft Red #FB4934
 {
   color: var(--darkbrown);
   border-radius: 3px;
-  background: linear-gradient(to right, #FFCC00, #1f8acb, #E53935, #FFCC00);
+  background: linear-gradient(to right, #e88f0a, #dedddd, #e88f0a);
   background-size: 200% 200%;
   animation: gradient 1s linear infinite;
 }
@@ -240,7 +237,15 @@ Red: Soft Red #FB4934
 {
   color: var(--darkbrown);
   border-radius: 3px;
-  background: linear-gradient(to right, #1DA1F2, #ebf7ff, #1DA1F2);
+  background: linear-gradient(to right, #0e8ede, #b7c7d2, #0e8ede);
+  background-size: 200% 200%;
+  animation: gradient 1s linear infinite;
+}
+#mail:hover
+{
+  color: var(--darkbrown);
+  border-radius: 3px;
+  background: linear-gradient(to right, #4284f5, #c6221c, #ea4132, #feba01, #00af45,#4284f5);
   background-size: 200% 200%;
   animation: gradient 1s linear infinite;
 }
