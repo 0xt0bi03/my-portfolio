@@ -4,41 +4,15 @@
   to { width: 100%; }
 }
 @keyframes loading {
-  0%{
-    .filler:nth-child(1)
-    {
-      opacity: 1;
-    }
-  }
-  20%{
-    .filler:nth-child(2)
-    {
-      opacity: 1;
-    }
-  }
-  30%{
-    .filler:nth-child(3)
-    {
-      opacity: 1;
-    }
-  }
-  50%{
-    .filler:nth-child(4)
-    {
-      opacity: 1;
-    }
-  }
-  70%{
-    .filler:nth-child(5)
-    {
-      opacity: 1;
-    }
-  }
-  100%{
-    .filler:nth-child(6)
-    {
-      opacity: 1;
-    }
+  0%{opacity: 0;}
+  95%{opacity: 0;}
+  100%{opacity: 1;}
+}
+@keyframes fadeout {
+  0%{opacity: 1;}
+  100% {
+    opacity: 0;
+    display: none; 
   }
 }
 
@@ -51,9 +25,12 @@
 :root
 {
   --display: none;
-  --height: 100vh;
+  --height: 95vh;
 }
 
+
+
+/*---------------------------------------------*/
 /* main css */
 .body
 {
@@ -80,13 +57,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* animation */
+  animation: fadeout 0.4s ease forwards;
+  animation-delay: 3.5s;
 }
 .bar
 {
   width: 150px;
   height: 30px;
   border: 2px solid #EBDBB2;
-
+  
   /* display */
   display: flex;
   align-items: center;
@@ -96,7 +76,12 @@
   padding-right: 5px;
   padding-top: 3px;
   padding-bottom: 3px;
-
+  
+  /* animation */
+  animation: fadeout 0.4s ease forwards;
+  animation-delay: 3.5s;
+  
+  
 }
 .filler
 {
@@ -104,17 +89,43 @@
   height: 95%;
   opacity: 0;
   background-color: #EBDBB2;
-  animation: loading 1s linear;
+  animation: loading 1s linear forwards;
+}
+.filler:nth-child(1)
+{
+  animation-delay: 0s;
+}
+.filler:nth-child(2)
+{
+  animation-delay: 0.4s;
+}
+.filler:nth-child(3)
+{
+  animation-delay: 0.5s;
+}
+.filler:nth-child(4)
+{
+  animation-delay: 1s;
+}
+.filler:nth-child(5)
+{
+  animation-delay: 1.2s;
+}
+.filler:nth-child(6)
+{
+  animation-delay: 2s;
 }
 
 
 
+/*---------------------------------------------*/
 /* MAIN SCREEN */
 #frame
 {
   display: var(--display);
   width: 800px;
   padding-left: 10px;
+  /* border: 2px solid #EBDBB2; */
 }
 
 /* contents */
@@ -127,9 +138,15 @@
 
 #github, #twitter
 {
-  font-size: 10px;
+  font-size: 14px;
   text-decoration: none;
   color: #EBDBB2;
+}
+
+#skill, #lang, #about
+{
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 /* others content + animation */
@@ -139,6 +156,11 @@
   white-space: nowrap;
   animation: typing 1s steps(300) forwards;
 }
+
+
+
+
+/*---------------------------------------------*/
 
 
 
