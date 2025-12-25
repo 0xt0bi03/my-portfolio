@@ -10,6 +10,7 @@
   src: url('fonts/aquarius.regular-mono.ttf') format('truetype');
 }
 
+/* main css */
 .body
 {
   background-color: #282828;
@@ -22,33 +23,42 @@
   display: flex;
   justify-content: center;
 }
-  
-/* .word 
+#frame
 {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 1s steps(300) forwards;
-} */
-
-#box
-{
-  
   width: 800px;
-  height: 100vh;
+  padding-left: 10px;
 }
 
-.title a
+/* contents */
+#heading
 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  /* margin-top: 15px; */
+}
+
+#github, #twitter
+{
+  font-size: 10px;
   text-decoration: none;
   color: #EBDBB2;
 }
 
-/* 
-#text
-{
-  white-space: pre-wrap;
-  word-wrap: break-word;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
 🌲 Gruvbox-Inspired Retro Geek
