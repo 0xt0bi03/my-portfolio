@@ -234,7 +234,7 @@
 
 /*---------------------------------------------*/
 /* FONT SIZE */
-#msg, #summary, #skilllist, #langlist, #abouttext, .bulletpoint
+#msg, #summary, #skilllist, #langlist, #abouttext, .bulletpoint, #themecredit, #fontcredit
 {
   font-size: 22px;
 }
