@@ -181,19 +181,19 @@
 #heading
 {
   color: var(--orange);
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 5px;
 }
 #github, #twitter, #codeforces, #mail
 {
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
   color: var(--cream);
 }
 #skill, #lang, #about, #interested, #hobbies
 {
   color: var(--red);
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
   text-wrap: wrap;
 }
@@ -227,8 +227,6 @@
 {
   text-decoration: none;
   color: var(--cream);
-  /* padding: 15px; */
-
 }
 
 
@@ -277,15 +275,6 @@
   padding-left: 2px;
 }
 
-/* 
-🌲 Gruvbox-Inspired Retro Geek
-Warm, earthy, cozy terminal
-Background: Dark Brown #282828
-Foreground: Cream #EBDBB2
-Accent: Orange #FE8019
-Green: Muted Green #B8BB26
-Red: Soft Red #FB4934
-💡 Why: Very popular among TUI power users for a reason. */
 
 #themecredit:hover{
   color: var(--darkbrown);
@@ -320,3 +309,12 @@ Red: Soft Red #FB4934
 
 
 
+/* 
+🌲 Gruvbox-Inspired Retro Geek
+Warm, earthy, cozy terminal
+Background: Dark Brown #282828
+Foreground: Cream #EBDBB2
+Accent: Orange #FE8019
+Green: Muted Green #B8BB26
+Red: Soft Red #FB4934
+💡 Why: Very popular among TUI power users for a reason. */
