@@ -30,6 +30,15 @@
   font-family: 'aquarius';
   src: url('fonts/aquarius.regular-mono.ttf') format('truetype');
 }
+@font-face {
+  font-family: "departure";
+  src: url("fonts/DepartureMono-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url("fonts/UbuntuMono-Regular.ttf") format("truetype");
+}
+
 
 
 :root
@@ -76,7 +85,7 @@
   color: var(--green);
   padding-left: 20px;
   padding-top: 10px;
-  font-family: aquarius;
+  font-family: departure;
   
   /* display */
   display: flex;
