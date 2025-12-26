@@ -230,6 +230,19 @@
 }
 
 
+
+
+/*---------------------------------------------*/
+/* FONT SIZE */
+#msg, #summary, #skilllist, #langlist, #abouttext, .bulletpoint
+{
+  font-size: 22px;
+}
+
+
+
+
+
 /*---------------------------------------------*/
 /* EFFECTS */
 #github:hover
