@@ -97,6 +97,7 @@
 /* LOADING SCREEN */
 .loading
 {
+  font-size: 30px;
   color: var(--green);
   width: 500px;
   height: 500px;
@@ -181,7 +182,6 @@
 {
   color: var(--orange);
   font-size: 30px;
-  /* margin-top: 20px; */
   margin-bottom: 5px;
 }
 #github, #twitter, #codeforces, #mail
