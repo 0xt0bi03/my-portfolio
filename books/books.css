@@ -1,0 +1,72 @@
+/* FONTS */
+@font-face {
+  font-family: "departure";
+  src: url("../fonts/DepartureMono-Regular.woff") format("woff");
+}
+
+
+/* ROOT VARIABLES */
+:root
+{
+  --height: 95vh;
+  --cream: #EBDBB2;
+  --darkbrown: #282828;
+  --orange: #FE8019;
+  --green: #B8BB26;
+  --red: #FB4934;
+}
+
+
+/* MAIN BODY */
+body
+{
+  display: flex;
+  justify-content: center;
+  background-color: var(--darkbrown);
+  
+  font-family: departure;
+  font-size: 22px;
+  color: var(--green);
+}
+#frame
+{
+  width: 90%;
+  max-width: 800px;
+}
+#frame h1
+{
+  font-size: 35px;
+  color: var(--red);
+}
+.box
+{
+  /* display */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* sizing */
+  width: 100%;
+  /* height: 200px; */
+  box-sizing: border-box;
+  /* padding */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  gap: 20px;
+  /* border */
+  border: 4px solid var(--cream);
+}
+.images
+{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 250px;
+  transition: transform 0.2s ease;
+}
+
+.images:hover
+{
+  transform: scale(1.2);
+}
+

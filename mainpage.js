@@ -10,7 +10,7 @@ document.addEventListener('mousemove', (e) => {
 
 
 // FUNCTION FOR TYPEWRITING EFFECT --------------------------
-function typewriting(element, text, speed = 5) {
+function typewriting(element, text, speed = 0) {
     let index = 0;
     element.textContent = ''; // Clear existing content
     
