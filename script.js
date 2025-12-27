@@ -33,7 +33,7 @@ const title = "Hey, It's Tobi.";
 const subject = 'I am a student who is learning Fullstack development, from India.';
 const skills = 'REACT(learning)';
 const languages ="HTML CSS JAVASCRIPT C++ PYTHON";
-const aboutme = `I am a 23 year old college student, from India. Unfortunately, I am not a CS Major, yet my love for programming was built on top of the hate for my own Material Science Major.
+const aboutme = `I am a 23 year old college student, from India. Unfortunately, I am not a CS Major, yet I started doing programming because of the love of the game.
 
 I love to program applications, debug critical structures and solve real world problems. Currently I am learning Fullstack Web/app development. I love problem solving and analytical thinking. I do solve Leetcode and Codeforces apart from development.
 
