@@ -37,6 +37,22 @@ body
 {
   font-size: 35px;
   color: var(--red);
+  margin-bottom: 0px;
+}
+.heading
+{
+  display: flex;
+  justify-content: space-between;
+}
+#back
+{
+  height: min-content;
+  background-color: var(--darkbrown);
+  color: var(--orange);
+  border: 3px solid var(--cream);
+  font-family: departure;
+  font-size: 20px;
+  transition: transform 0.1s ease;
 }
 .box
 {
@@ -65,8 +81,19 @@ body
   transition: transform 0.2s ease;
 }
 
+
+/* ANIMATIONS AND TRANSITIONS */
 .images:hover
 {
   transform: scale(1.2);
+}
+#back:hover
+{
+  background-color: var(--cream);
+  color: var(--darkbrown);
+}
+#back:active
+{
+  transform: scale(0.85);
 }
 
