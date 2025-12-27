@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "departure";
+  src: url("fonts/DepartureMono-Regular.woff") format("woff");
+}
+
 :root
 {
   --display: none;
@@ -11,6 +16,7 @@
 
 body
 {
+    font-family: departure;
     background-color: var(--darkbrown);
     color: var(--cream);
 }
