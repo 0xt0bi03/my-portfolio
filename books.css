@@ -1,0 +1,16 @@
+:root
+{
+  --display: none;
+  --height: 95vh;
+  --cream: #EBDBB2;
+  --darkbrown: #282828;
+  --orange: #FE8019;
+  --green: #B8BB26;
+  --red: #FB4934;
+}
+
+body
+{
+    background-color: var(--darkbrown);
+    color: var(--cream);
+}
