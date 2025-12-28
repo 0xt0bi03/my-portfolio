@@ -218,7 +218,7 @@
 {
   text-wrap: wrap;
 }
-#chess
+#chess, #books
 {
   text-decoration: none;
   color: var(--green);
@@ -287,6 +287,15 @@
   color: var(--darkbrown);
   border-radius: 3px;
   background: linear-gradient(to right, #5d9948, #80b64c, #b3e069, #5d9948);
+  background-size: 200% 200%;
+  animation: gradient 1s linear infinite;
+  padding-left: 2px;
+}
+#books:hover
+{
+  color: var(--darkbrown);
+  border-radius: 3px;
+  background: linear-gradient(to right, #ff4800, #ff6000, #ff7900, #ff9100, #ffb600, #ff9100, #ff7900, #ff6000, #ff4800);
   background-size: 200% 200%;
   animation: gradient 1s linear infinite;
   padding-left: 2px;

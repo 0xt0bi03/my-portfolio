@@ -79,11 +79,35 @@ function print()
 
 
 // LOADING TO MAIN SCREEN TRANSISITON ----------
+// const loading_display = document.querySelector('.loading');
+
+// setTimeout(() => {
+//     loading_display.style.display = 'none';
+//     document.documentElement.style.setProperty('--display', 'block');
+//     document.documentElement.style.setProperty('--height', 'auto');
+//     print();
+// }, 4000);
+
+
+// LOADING TO MAIN SCREEN TRANSISITON ----------
 const loading_display = document.querySelector('.loading');
 
-setTimeout(() => {
+// Check if user has already visited (during this session)
+const hasVisited = sessionStorage.getItem('hasVisited');
+
+if (hasVisited) {
+    // Skip loading screen, show content immediately
     loading_display.style.display = 'none';
     document.documentElement.style.setProperty('--display', 'block');
     document.documentElement.style.setProperty('--height', 'auto');
     print();
-}, 4000);
+} else {
+    // Show loading screen for first visit
+    sessionStorage.setItem('hasVisited', 'true');
+    setTimeout(() => {
+        loading_display.style.display = 'none';
+        document.documentElement.style.setProperty('--display', 'block');
+        document.documentElement.style.setProperty('--height', 'auto');
+        print();
+    }, 4000);
+}
