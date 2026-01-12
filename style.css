@@ -25,11 +25,15 @@
     --fg: #bbb;
 }
 
+*
+{
+    font-family: Aquarius;
+}
+
 body
 {
     background-color: var(--bg);
     color: var(--fg);
-    font-family: aquarius;
     height: 97vh;
 
     display: flex;
@@ -63,5 +67,15 @@ body
     height: 70px;
     background-color: #777;
 
-    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btns
+{
+    width: auto;
+    height: 30px;
+    background-color: #999;
+    border: 3px solid black;
 }
