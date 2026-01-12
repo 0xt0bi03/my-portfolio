@@ -72,7 +72,14 @@ body
     /* border: 4px solid var(--fg); */
 
     
-}.titleframe p
+}
+
+#welcome
+{
+    font-size: 15px;
+}
+
+.titleframe p
 {
     font-size: 19px;
     margin-bottom: 0;
@@ -172,5 +179,19 @@ body
     /* background-color: #666; */
     flex: 1;
 }
+
+
+
+
+
+/* ------------------------------------------- */
+/* EXTRAS */
+*::selection
+{
+    background-color: var(--sandal);
+    color: var(--darkpurple);
+}
+
+
 
 /* https://github.com/mbadolato/iTerm2-Color-Schemes?tab=readme-ov-file#urban */
