@@ -30,10 +30,12 @@ body
     background-color: var(--bg);
     color: var(--fg);
     font-family: aquarius;
+    height: 97vh;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .titleframe
@@ -49,4 +51,9 @@ body
 .bodyframe
 {
     width: 100%;
+    max-width: 800px;
+    
+    flex: 1;
+    background-color: #555;
+
 }
