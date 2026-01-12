@@ -18,16 +18,25 @@
     font-family: ubuntu;
     src: url(fonts/UbuntuMono-Regular.ttf)format(truetype);
 }
+@font-face {
+    font-family: agave;
+    src: url(fonts/Agave-Regular.ttf)format(truetype);
+}
+@font-face {
+      font-family: 'dina';
+      src: url(fonts/DinaRemasterCollection.ttc) format('collection');
+  }
 
 :root
 {
     --bg: #111;
     --fg: #bbb;
+    --margin: #bbbbbb6e;
 }
 
 *
 {
-    font-family: departure;
+    font-family: aquarius;
 }
 
 body
@@ -40,7 +49,7 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    /* gap: 3px; */
 }
 
 /* ------------------------------------------- */
@@ -53,13 +62,12 @@ body
     /* background-color: #333; */
     /* border: 4px solid var(--fg); */
 
-    padding-left: 30px;
-    box-sizing: border-box;
-    border-left: 3px dotted var(--fg);
+    
 }.titleframe p
 {
-    font-size: 20px;
+    font-size: 19px;
     margin-bottom: 0;
+    margin-top: 10px;
 }
 .titleframe h1
 {
@@ -80,10 +88,17 @@ body
     
     display: flex;
     flex-direction: column;
+    /* border-top: 3px solid var(--margin); */
+}
 
+
+/* ------------------------------------------- */
+.titleframe, .bodyframe
+{
     padding-left: 30px;
     box-sizing: border-box;
-    border-left: 3px dotted var(--fg);
+    border-left: 3px solid var(--margin);
+    /* border-style:dashed; */
 }
 
 /* ------------------------------------------- */
@@ -116,6 +131,6 @@ body
 .content
 {
     width: 100%;
-    background-color: cadetblue;
+    /* background-color: #666; */
     flex: 1;
 }
