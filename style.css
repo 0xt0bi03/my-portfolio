@@ -91,22 +91,7 @@ body
     margin-bottom: 0;
     margin-top: 10px;
 }
-.titlename:nth-child(1)
-{
-    color: var(--green);
-}
-.titlename:nth-child(2)
-{
-    color: var(--red);
-}
-.titlename:nth-child(3)
-{
-    color: var(--purple);
-}
-.titlename:nth-child(4)
-{
-    color: var(--yellow);
-}
+
 
 /* ------------------------------------------- */
 /* BODYFRAME */
@@ -186,12 +171,44 @@ body
 
 /* ------------------------------------------- */
 /* EXTRAS */
+
+/* HIGHLIGHTING COLORS */
 *::selection
 {
     background-color: var(--sandal);
     color: var(--darkpurple);
 }
 
+/* TITLE NAME COLOR */
+.titlename:nth-child(1)
+{
+    color: var(--green);
+}
+.titlename:nth-child(2)
+{
+    color: var(--red);
+}
+.titlename:nth-child(3)
+{
+    color: var(--purple);
+}
+.titlename:nth-child(4)
+{
+    color: var(--yellow);
+}
+
+.countryname:nth-child(1)
+{
+    color: #ff661faf;
+}
+.countryname:nth-child(2)
+{
+    color: rgba(255, 255, 255, 0.633);
+}
+.countryname:nth-child(3)
+{
+    color: #046a39;
+}
 
 
 /* https://github.com/mbadolato/iTerm2-Color-Schemes?tab=readme-ov-file#urban */
