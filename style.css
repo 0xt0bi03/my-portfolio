@@ -29,9 +29,18 @@
 
 :root
 {
-    --bg: #111;
-    --fg: #bbb;
-    --margin: #bbbbbb6e;
+    /* --bg: #312f38; */
+    /* --fg: #c0a79a; */
+    /* --margin: #625465; */
+    --darkpurple: #312f38;
+    --red: #87414f;
+    --green: #75924f;
+    --yellow: #ad835a;
+    --purple: #615771;
+    --pink: #844b63;
+    --violet: #625464;
+    --sandal: #c0a79a;
+
 }
 
 *
@@ -41,9 +50,9 @@
 
 body
 {
-    background-color: var(--bg);
-    color: var(--fg);
-    height: 97vh;
+    background-color: var(--darkpurple);
+    color: var(--sandal);
+    /* height: 97vh; */
 
     display: flex;
     flex-direction: column;
@@ -75,6 +84,22 @@ body
     margin-bottom: 0;
     margin-top: 10px;
 }
+.titlename:nth-child(1)
+{
+    color: var(--green);
+}
+.titlename:nth-child(2)
+{
+    color: var(--red);
+}
+.titlename:nth-child(3)
+{
+    color: var(--purple);
+}
+.titlename:nth-child(4)
+{
+    color: var(--yellow);
+}
 
 /* ------------------------------------------- */
 /* BODYFRAME */
@@ -97,7 +122,7 @@ body
 {
     padding-left: 30px;
     box-sizing: border-box;
-    border-left: 3px solid var(--margin);
+    border-left: 3px solid var(--yellow);
     /* border-style:dashed; */
 }
 
@@ -108,6 +133,7 @@ body
     width: 100%;
     height: 70px;
     /* background-color: #777; */
+    border-bottom: 3px solid var(--yellow);
     
     display: flex;
     /* justify-content: space-evenly; */
@@ -119,12 +145,24 @@ body
 {
     width: auto;
     height: 30px;
-    background-color: var(--bg);
-    color: var(--fg);
-    border: 2px solid var(--fg);
+    background-color: var(--darkpurple);
+    color: var(--sandal);
+    border: none;
+    border-radius: 5px;
+    /* border: 2px solid var(--yellow); */
     /* border: 3px solid black; */
-}
 
+    transition: transform 0.3s ease;
+}
+.btns:hover
+{
+    background-color: var(--pink);
+    transform: translateY(-2px);
+}
+.btns:active
+{
+    transform: scale(0.85);
+}
 
 /* ------------------------------------------- */
 /* CONTENT */
@@ -134,3 +172,5 @@ body
     /* background-color: #666; */
     flex: 1;
 }
+
+/* https://github.com/mbadolato/iTerm2-Color-Schemes?tab=readme-ov-file#urban */
