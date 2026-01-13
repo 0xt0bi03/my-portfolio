@@ -112,9 +112,9 @@ body
 /* ------------------------------------------- */
 .titleframe, .bodyframe
 {
-    padding-left: 30px;
+    /* padding-left: 30px; */
     box-sizing: border-box;
-    border-left: 3px solid var(--yellow);
+    /* border-left: 3px solid var(--yellow); */
     /* border-style:dashed; */
 }
 
@@ -154,7 +154,13 @@ body
 .btns:active
 {
     transform: scale(0.85);
+    /* background-color: var(--green); */
 }
+/* 
+.btns
+{
+    background-color: var(--green);
+} */
 
 
 
