@@ -12,6 +12,9 @@ skills.style.display = 'none';
 projects.style.display = 'none';
 interests.style.display = 'none';
 
+// about.toggle('clicked');
+
+
 
 
 btnstate.forEach(function(btn)
