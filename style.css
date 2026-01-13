@@ -175,14 +175,14 @@ body
 
 .btns:nth-child(1):hover
 {
-    background-color: var(--red);
     color: var(--darkpurple);
+    background-color: var(--green);
     border: none;
 }
 .btns:nth-child(2):hover
 {
     color: var(--darkpurple);
-    background-color: var(--green);
+    background-color: var(--red);
     border: none;
 }
 .btns:nth-child(3):hover
@@ -219,7 +219,7 @@ body
 }
 
 /* #html, #css, #js, #cpp, #py */
-.languages p, .frameworks p
+.languages p, .frameworks p, .tools p
 {
     color: var(--darkpurple);
     border-radius: 5px ;
@@ -253,13 +253,24 @@ body
 }
 #react
 {
-    background-color: #00d9ff;
+    background-color: #00d9ffc1;
     color: var(--darkpurple);
 }
-/* #git
+#git
 {
-
-} */
+    background-color: #f35128cb;
+    color: var(--darkpurple);
+}
+#github
+{
+    background-color: #010236;
+    color: rgba(255, 255, 255, 0.829);
+}
+#pnpm
+{
+    background-color: #f8af03d6;
+    color: var(--darkpurple);
+}
 
 #skilltitle, #frmtitle, #toolstitle
 {
