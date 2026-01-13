@@ -20,11 +20,12 @@ btnstate.forEach(function(btn)
     {
         // console.log(`button ${connections.get(btn).textContent} is clicked!`);
 
-        // btnstate.forEach(function (b)
-        // {
-        //     b.classList.remove('active');
-        // });
+        btnstate.forEach(function (b)
+        {
+            b.classList.remove('clicked');
+        });
         // btn.classList.add('active');
+        btn.classList.toggle('clicked');
 
         connections.forEach(function (content) 
         {
