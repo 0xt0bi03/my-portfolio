@@ -167,6 +167,23 @@ body
     box-sizing: border-box;
 }
 
+.btns:nth-child(1):hover
+{
+    background-color: var(--red);
+}
+.btns:nth-child(2):hover
+{
+    background-color: var(--green);
+}
+.btns:nth-child(3):hover
+{
+    background-color: var(--purple);
+}
+.btns:nth-child(4):hover
+{
+    /* background-color: #ff661faf; */
+    background-color: var(--yellow);
+}
 
 
 
