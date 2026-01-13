@@ -209,7 +209,7 @@ body
     flex: 1;
 }
 
-.languages
+.languages, .tools, .frameworks
 {
     display:flex;
     flex-wrap: wrap;
@@ -219,13 +219,13 @@ body
 }
 
 /* #html, #css, #js, #cpp, #py */
-.languages p
+.languages p, .frameworks p
 {
     color: var(--darkpurple);
     border-radius: 5px ;
     padding: 4px;
     padding-left: 8px;
-    padding-right: 8px;
+    padding-right: calc(padding-left - 3px);
 }
 
 #html
@@ -251,6 +251,15 @@ body
     background-color: var(--green);
     color: var(--darkpurple);
 }
+#react
+{
+    background-color: #00d9ff;
+    color: var(--darkpurple);
+}
+/* #git
+{
+
+} */
 
 #skilltitle, #frmtitle, #toolstitle
 {
