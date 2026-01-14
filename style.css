@@ -329,22 +329,35 @@ body
     color: #046a39;
 }
 
-#codeforces 
+#codeforces, #gear
 {
     display: inline-block;
     text-decoration: none;
-    color: #ff661faf;
 }
 
-#codeforces:hover
+#codeforces:hover, #gear:hover
 {
-    background-color: #ff661faf;
     color: var(--darkpurple);
-    /* padding: 4px 6px; */
     padding-left: 4px;
     border-radius: 5px;
-    /* transition: transform 0.2s ease;
-    transform: translateY(-2px); */
+    transform: translateY(-2px);
+}
+
+#codeforces
+{
+    color: var(--yellow);
+}
+#gear
+{
+    color: var(--red);
+}
+#codeforces:hover
+{
+    background-color: var(--yellow);
+}
+#gear:hover
+{
+    background-color: var(--red);
 }
 
 
