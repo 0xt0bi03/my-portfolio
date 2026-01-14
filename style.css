@@ -334,11 +334,13 @@ body
     text-decoration: none;
     color: var(--sandal);
 }
-#codeforces:hover
+#codeforces a:hover
 {
     background-color: #ff661faf;
-    padding-left: 4px;
-    padding-right: calc(padding-left - 2px);
+    color: var(--darkpurple);
+    padding-left: 6px;
+    /* padding-right: calc(padding-left + 1px); */
+    padding-right: 3px;
     border-radius: 5px;
 }
 
