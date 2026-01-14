@@ -329,5 +329,18 @@ body
     color: #046a39;
 }
 
+#codeforces a
+{
+    text-decoration: none;
+    color: var(--sandal);
+}
+#codeforces:hover
+{
+    background-color: #ff661faf;
+    padding-left: 4px;
+    padding-right: calc(padding-left - 2px);
+    border-radius: 5px;
+}
+
 /* theme source */
 /* https://github.com/mbadolato/iTerm2-Color-Schemes?tab=readme-ov-file#urban */
