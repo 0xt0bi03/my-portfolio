@@ -329,19 +329,25 @@ body
     color: #046a39;
 }
 
-#codeforces a
+#codeforces
 {
     text-decoration: none;
     color: var(--sandal);
-}
-#codeforces a:hover
-{
     background-color: #ff661faf;
     color: var(--darkpurple);
     padding-left: 6px;
     /* padding-right: calc(padding-left + 1px); */
     padding-right: 3px;
     border-radius: 5px;
+}
+#codeforces:hover
+{
+    /* background-color: #ff661faf;
+    color: var(--darkpurple);
+    padding-left: 6px;
+    padding-right: 3px;
+    border-radius: 5px; */
+    transform: translateY(-2px);
 }
 
 /* theme source */
