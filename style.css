@@ -329,26 +329,24 @@ body
     color: #046a39;
 }
 
-#codeforces
+#codeforces 
 {
+    display: inline-block;
     text-decoration: none;
-    color: var(--sandal);
-    background-color: #ff661faf;
-    color: var(--darkpurple);
-    padding-left: 6px;
-    /* padding-right: calc(padding-left + 1px); */
-    padding-right: 3px;
-    border-radius: 5px;
+    color: #ff661faf;
 }
+
 #codeforces:hover
 {
-    /* background-color: #ff661faf;
+    background-color: #ff661faf;
     color: var(--darkpurple);
-    padding-left: 6px;
-    padding-right: 3px;
-    border-radius: 5px; */
-    transform: translateY(-2px);
+    /* padding: 4px 6px; */
+    padding-left: 4px;
+    border-radius: 5px;
+    /* transition: transform 0.2s ease;
+    transform: translateY(-2px); */
 }
+
 
 /* theme source */
 /* https://github.com/mbadolato/iTerm2-Color-Schemes?tab=readme-ov-file#urban */
