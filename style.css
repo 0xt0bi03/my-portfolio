@@ -103,10 +103,26 @@ body
     text-decoration: none;
     color: var(--sandal);
 }
-/* .contactlinks:nth-child(1):hover
+.contactlinks:nth-child(1):hover
 {
-    background: linear-gradient();
-} */
+    background: linear-gradient(to right, #4086f5, #ea4133, #fabd01, #31ab52);
+    color: var(--darkpurple);
+}
+.contactlinks:nth-child(2):hover
+{
+    background-color: #010236;
+    color: rgba(255, 255, 255, 0.829);
+}
+.contactlinks:nth-child(3):hover
+{
+    background-color: #007ebb;
+    color: var(--darkpurple);
+}
+.contactlinks:nth-child(4):hover
+{
+    background-color: #47a9e8;
+    color: #ffffff;
+}
 
 
 #welcome
