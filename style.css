@@ -366,13 +366,13 @@ body
     color: #046a39;
 }
 
-#codeforces, #gear
+#codeforces, #gear, #theme
 {
     display: inline-block;
     text-decoration: none;
 }
 
-#codeforces:hover, #gear:hover
+#codeforces:hover, #gear:hover, #theme:hover
 {
     color: var(--darkpurple);
     padding-left: 4px;
@@ -382,12 +382,17 @@ body
 
 #codeforces
 {
-    color: var(--yellow);
+    color: var(--purple);
 }
 #gear
 {
     color: var(--red);
 }
+#theme
+{
+    color: var(--green);
+}
+
 #codeforces:hover
 {
     background-color: var(--yellow);
@@ -396,7 +401,9 @@ body
 {
     background-color: var(--red);
 }
+#theme:hover
+{
+    background-color: var(--green);
+}
 
-/* theme source */
-/* https://github.com/mbadolato/iTerm2-Color-Schemes?tab=readme-ov-file#urban */
 
