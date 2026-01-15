@@ -74,6 +74,26 @@ body
     
 }
 
+.title
+{
+    background-color: wheat;
+    /* height: ; */
+    display: flex;
+    justify-content: space-between;
+}
+.left
+{
+    background-color: yellowgreen;
+}
+.right
+{
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
 #welcome
 {
     font-size: 15px;
@@ -362,3 +382,4 @@ body
 
 /* theme source */
 /* https://github.com/mbadolato/iTerm2-Color-Schemes?tab=readme-ov-file#urban */
+
