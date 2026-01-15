@@ -29,9 +29,6 @@
 
 :root
 {
-    /* --bg: #312f38; */
-    /* --fg: #c0a79a; */
-    /* --margin: #625465; */
     --darkpurple: #312f38;
     --red: #87414f;
     --green: #75924f;
@@ -40,25 +37,24 @@
     --pink: #844b63;
     --violet: #625464;
     --sandal: #c0a79a;
-
 }
 
-*
-{
+/* DEFAULT ALL SETTINGS */
+*{
     font-family: aquarius;
 }
 
+/* BODY */
 body
 {
     background-color: var(--darkpurple);
     color: var(--sandal);
-    /* height: 97vh; */
 
+    /* DISPLAY */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* gap: 3px; */
 }
 
 /* ------------------------------------------- */
@@ -68,33 +64,20 @@ body
     width: 100%;
     max-width: 800px;
     height: auto;
-    /* background-color: #333; */
-    /* border: 4px solid var(--fg); */
-
-    
 }
 
 .title
 {
-    /* background-color: wheat; */
     display: flex;
     justify-content: space-between;
 }
-/* .left
-{
-    background-color: yellowgreen;
-}    */
 .right
 {
-    
     height: 108.2px;
 
-    /* overflow-wrap: break-word; */
-    /* background-color: teal; */
+    /* DISPLAY */
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
-
     flex-direction: column;
     gap: 20px;
 }
@@ -107,24 +90,20 @@ body
 {
     transition: transform 0.3s ease;
 }
+
 .contactlinks:hover
 {
     transform:translateX(5%)
 }
-
 .contactlinks:nth-child(1):hover
 {
-    /* background: linear-gradient(to right, #4086f5, #ea4133, #fabd01, #31ab52); */
     background-color: orangered;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    /* color: var(--darkpurple); */
 }
 .contactlinks:nth-child(2):hover
 {
-    /* background-color: #010236; */
-    /* color: rgba(255, 255, 255, 0.829); */
     background-color: mediumvioletred;
     -webkit-background-clip: text;
     background-clip: text;
@@ -132,9 +111,7 @@ body
 }
 .contactlinks:nth-child(3):hover
 {
-    /* background-color: #007ebb; */
     background-color: greenyellow;
-    /* color: var(--darkpurple); */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -142,11 +119,9 @@ body
 .contactlinks:nth-child(4):hover
 {
     background-color: #36b9ff;
-    /* color: #ffffffd5; */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    
 }
 
 
@@ -177,21 +152,16 @@ body
     max-width: 800px;
     
     flex: 1;
-    /* background-color: #555; */
     
     display: flex;
     flex-direction: column;
-    /* border-top: 3px solid var(--margin); */
 }
 
 
 /* ------------------------------------------- */
 .titleframe, .bodyframe
 {
-    /* padding-left: 30px; */
     box-sizing: border-box;
-    /* border-left: 3px solid var(--yellow); */
-    /* border-style:dashed; */
 }
 
 /* ------------------------------------------- */
@@ -201,19 +171,19 @@ body
     width: 100%;
     min-height: 60px;
     height: auto;
-    /* background-color: #777; */
     border-bottom: 3px solid var(--yellow);
     border-top: 3px solid var(--yellow);
-
+    
     padding-top: 10px;
     padding-bottom: 10px;
     
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
     gap: 20px;
     align-items: center;
 }
+
+/* ------------------------------------------- */
 /* MENU BAR BUTTONS */
 .btns
 {
@@ -224,15 +194,11 @@ body
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    /* border: 2px solid var(--yellow); */
-    /* border: 3px solid black; */
-
     transition: transform 0.3s ease;
 }
 .btns:hover
 {
     background-color: var(--red);
-    /* border: 2px solid var(--sandal); */
     border: none;
     box-sizing: border-box;
     transform: translateY(-2px);
@@ -240,12 +206,10 @@ body
 .btns:active
 {
     transform: scale(0.85);
-    /* background-color: var(--green); */
 }
 
 .btns.clicked
 {
-    /* background-color: var(--pink); */
     border: 2px solid var(--sandal);
     box-sizing: border-box;
 }
@@ -282,7 +246,6 @@ body
 .content
 {
     width: 100%;
-    /* background-color: #666; */
     flex: 1;
 }
 
@@ -291,11 +254,8 @@ body
     display:flex;
     flex-wrap: wrap;
     gap: 20px;
-    /* justify-content: space-around; */
-
 }
 
-/* #html, #css, #js, #cpp, #py */
 .languages p, .frameworks p, .tools p
 {
     color: var(--darkpurple);
