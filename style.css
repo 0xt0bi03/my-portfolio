@@ -96,32 +96,57 @@ body
     /* align-items: center; */
 
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 .right a
 {
     text-decoration: none;
     color: var(--sandal);
 }
+.contactlinks
+{
+    transition: transform 0.3s ease;
+}
+.contactlinks:hover
+{
+    transform:translateX(5%)
+}
+
 .contactlinks:nth-child(1):hover
 {
-    background: linear-gradient(to right, #4086f5, #ea4133, #fabd01, #31ab52);
-    color: var(--darkpurple);
+    /* background: linear-gradient(to right, #4086f5, #ea4133, #fabd01, #31ab52); */
+    background-color: red;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* color: var(--darkpurple); */
 }
 .contactlinks:nth-child(2):hover
 {
-    background-color: #010236;
-    color: rgba(255, 255, 255, 0.829);
+    /* background-color: #010236; */
+    /* color: rgba(255, 255, 255, 0.829); */
+    background-color: yellow;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 .contactlinks:nth-child(3):hover
 {
-    background-color: #007ebb;
-    color: var(--darkpurple);
+    /* background-color: #007ebb; */
+    background-color: greenyellow;
+    /* color: var(--darkpurple); */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 .contactlinks:nth-child(4):hover
 {
-    background-color: #47a9e8;
-    color: #ffffff;
+    background-color: #36b9ff;
+    /* color: #ffffffd5; */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
 }
 
 
