@@ -115,7 +115,7 @@ body
 .contactlinks:nth-child(1):hover
 {
     /* background: linear-gradient(to right, #4086f5, #ea4133, #fabd01, #31ab52); */
-    background-color: red;
+    background-color: orangered;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -125,7 +125,7 @@ body
 {
     /* background-color: #010236; */
     /* color: rgba(255, 255, 255, 0.829); */
-    background-color: yellow;
+    background-color: mediumvioletred;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -223,6 +223,7 @@ body
     color: var(--sandal);
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     /* border: 2px solid var(--yellow); */
     /* border: 3px solid black; */
 
