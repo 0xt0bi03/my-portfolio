@@ -76,21 +76,25 @@ body
 
 .title
 {
-    background-color: wheat;
-    /* height: ; */
+    /* background-color: wheat; */
     display: flex;
     justify-content: space-between;
 }
 .left
 {
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
 }
 .right
 {
-    background-color: teal;
+    height: 108.2px;
+
+    overflow-wrap: break-word;
+    /* background-color: teal; */
     display: flex;
+    flex-wrap: wrap;
+
     flex-direction: column;
-    gap: 10px;
+    gap: 40px;
 }
 
 
