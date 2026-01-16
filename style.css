@@ -215,12 +215,6 @@ body
     transform: scale(0.85);
 }
 
-/* .btns.clicked
-{
-    border: 2px solid var(--sandal);
-    box-sizing: border-box;
-} */
-
 .btns:nth-child(1):hover
 {
     color: var(--darkpurple);
