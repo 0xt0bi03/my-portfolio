@@ -57,6 +57,13 @@ body
     align-items: center;
 }
 
+
+/* ------------------------------------------- */
+.menucard
+{
+    display: none;
+}
+
 /* ------------------------------------------- */
 /* TITLEFRAME */
 .titleframe
@@ -123,11 +130,15 @@ body
     background-clip: text;
     color: transparent;
 }
-@media (max-width: 500px)
+@media (max-width: 564px)
 {
     .right
     {
         display: none;
+    }
+    .menucard
+    {
+        display: block;
     }
 }
 
