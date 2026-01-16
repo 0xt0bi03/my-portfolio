@@ -123,6 +123,13 @@ body
     background-clip: text;
     color: transparent;
 }
+@media (max-width: 500px)
+{
+    .right
+    {
+        display: none;
+    }
+}
 
 
 #welcome
@@ -179,7 +186,7 @@ body
     
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
 }
 
