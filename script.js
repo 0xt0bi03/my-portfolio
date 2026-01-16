@@ -36,6 +36,7 @@ btnstate.forEach(function(btn)
         });
 
         connections.get(btn).style.display = 'block';
+        // connections.get(btn).style.hov
         // btn.style.d
 
     });
