@@ -62,10 +62,15 @@ body
 .menucard
 {
     display: none;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     padding: 10px;
 
+}
+#menubutton
+{
+    background-color: transparent;
+    border: none;
     transition: transform 0.2s ease;
 }
 #menubar
@@ -74,7 +79,7 @@ body
     height: 100%;
     object-fit: cover;
 }
-.menucard:active
+#menubutton:active
 {
     transform: scale(0.85);
 }
@@ -86,7 +91,7 @@ body
     background-color: var(--pink);
     z-index: 9999;
     position: fixed;
-    right: 0%;
+    right: -40%;
     width: auto;
     height: auto;
 
@@ -99,13 +104,18 @@ body
     /* justify-content: flex-e; */
     gap: 20px;
     align-items: center;
+
+    /* transition: 0.3s ease; */
 }
 .menulinks
 {
     text-decoration: none;
     color: var(--sandal);
 }
-
+.menu.open
+{
+    right: 0%;
+}
 
 /* ------------------------------------------- */
 /* TITLEFRAME */

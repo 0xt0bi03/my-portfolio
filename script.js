@@ -8,8 +8,8 @@ let interests = document.querySelector('.interests');
 let connections = new Map([[btnstate[0], about], [btnstate[1], skills], [btnstate[2], projects], [btnstate[3], interests]]);
 
 // menubar
-let menu = document.querySelector('#menu');
-console.log(menu);
+let menubutton = document.querySelector('#menubutton');
+console.log(menubutton);
 
 
 about.style.display = 'block';
