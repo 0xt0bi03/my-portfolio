@@ -91,7 +91,7 @@ body
     background-color: var(--pink);
     z-index: 9999;
     position: fixed;
-    right: -40%;
+    right: -100%;
     width: auto;
     height: auto;
 
@@ -493,3 +493,25 @@ body
 }
 
 
+/* ============================= */
+/* BACKGROUND BLUR OVERLAY */
+/* ============================= */
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2); /* slight darkening */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+
+    z-index: 9998; /* below menu (menu is 9999) */
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}

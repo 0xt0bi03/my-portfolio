@@ -61,20 +61,19 @@
 // });
 
 
+// ==================================================
+// SECTION SWITCHING (ABOUT / SKILLS / PROJECTS / INTERESTS)
+// ==================================================
 
-// ==============================
-// SECTION TOGGLE (ABOUT / SKILLS / PROJECTS / INTERESTS)
-// ==============================
+const btnstate = document.querySelectorAll('.btns');
 
-let btnstate = document.querySelectorAll('.btns');
+const about = document.querySelector('.about');
+const skills = document.querySelector('.skills');
+const projects = document.querySelector('.projects');
+const interests = document.querySelector('.interests');
 
-let about = document.querySelector('.about');
-let skills = document.querySelector('.skills');
-let projects = document.querySelector('.projects');
-let interests = document.querySelector('.interests');
-
-// Map buttons to content sections
-let connections = new Map([
+// Map buttons to sections
+const connections = new Map([
     [btnstate[0], about],
     [btnstate[1], skills],
     [btnstate[2], projects],
@@ -87,48 +86,58 @@ skills.style.display = 'none';
 projects.style.display = 'none';
 interests.style.display = 'none';
 
-// Button click logic
+// Button click handling
 btnstate.forEach(btn => {
     btn.addEventListener('click', () => {
 
-        // remove active state from all buttons
+        // Remove active state from all buttons
         btnstate.forEach(b => b.classList.remove('clicked'));
 
-        // add active state to clicked button
+        // Activate clicked button
         btn.classList.add('clicked');
 
-        // hide all sections
+        // Hide all sections
         connections.forEach(section => {
             section.style.display = 'none';
         });
 
-        // show corresponding section
+        // Show selected section
         connections.get(btn).style.display = 'block';
     });
 });
 
 
-// ==============================
-// MOBILE MENU TOGGLE
-// ==============================
+// ==================================================
+// MOBILE MENU + BACKGROUND BLUR
+// ==================================================
 
-let menubutton = document.querySelector('#menubutton');
-let menu = document.querySelector('.menu');
+const menubutton = document.querySelector('#menubutton');
+const menu = document.querySelector('.menu');
+const overlay = document.querySelector('.overlay');
 
-// Toggle menu on button click
+// Open / close menu
 menubutton.addEventListener('click', (e) => {
-    e.stopPropagation();          // prevent document click
-    menu.classList.toggle('open');
+    e.stopPropagation();
+
+    const isOpen = menu.classList.toggle('open');
+    overlay.classList.toggle('active', isOpen);
 });
 
-// Prevent clicks inside menu from bubbling
+// Prevent clicks inside menu from closing it
 menu.addEventListener('click', (e) => {
     e.stopPropagation();
 });
 
-// Close menu when clicking outside
-document.addEventListener('click', () => {
-    if (menu.classList.contains('open')) {
+// Close menu when clicking outside (overlay)
+overlay.addEventListener('click', () => {
+    menu.classList.remove('open');
+    overlay.classList.remove('active');
+});
+
+// Optional: close menu on ESC key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu.classList.contains('open')) {
         menu.classList.remove('open');
+        overlay.classList.remove('active');
     }
 });
