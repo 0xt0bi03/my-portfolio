@@ -88,7 +88,7 @@ body
 {
     /* display: none; */
     font-size: 20px;
-    background-color: var(--pink);
+    background-color: var(--darkpurple);
     z-index: 9999;
     position: fixed;
     right: -100%;
@@ -116,6 +116,34 @@ body
 {
     right: 0%;
     display: flex;
+}
+.menulinks:nth-child(1)
+{
+    background-color: orangered;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.menulinks:nth-child(2)
+{
+    background-color: mediumvioletred;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.menulinks:nth-child(3)
+{
+    background-color: greenyellow;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.menulinks:nth-child(4)
+{
+    background-color: #36b9ff;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 /* ------------------------------------------- */
