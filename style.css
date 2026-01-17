@@ -79,6 +79,12 @@ body
     transform: scale(0.85);
 }
 
+.menu
+{
+    display: none;
+}
+
+
 /* ------------------------------------------- */
 /* TITLEFRAME */
 .titleframe

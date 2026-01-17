@@ -7,6 +7,11 @@ let interests = document.querySelector('.interests');
 
 let connections = new Map([[btnstate[0], about], [btnstate[1], skills], [btnstate[2], projects], [btnstate[3], interests]]);
 
+// menubar
+let menu = document.querySelector('#menu');
+console.log(menu);
+
+
 about.style.display = 'block';
 skills.style.display = 'none';
 projects.style.display = 'none';
