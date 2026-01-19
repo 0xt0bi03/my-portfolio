@@ -113,20 +113,23 @@ body
 }
 
 /* OPEN */
-.menu.open {
+.menu.open
+{
     animation: openbox 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     border: 2px solid var(--sandal);
     pointer-events: auto;
 }
 
 /* CLOSE */
-.menu.closing {
+.menu.closing 
+{
     animation: closebox 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     pointer-events: none;
 }
 
 /* OPEN ANIMATION */
-@keyframes openbox {
+@keyframes openbox 
+{
     0% {
         max-width: 0;
         max-height: 0;
@@ -145,7 +148,8 @@ body
 }
 
 /* CLOSE ANIMATION (REVERSE) */
-@keyframes closebox {
+@keyframes closebox 
+{
     0% {
         max-width: 200px;
         max-height: 285px;
