@@ -57,6 +57,18 @@ body
     align-items: center;
 }
 
+body 
+{
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar
+{
+  display: none;
+}
+
+
 
 /* ------------------------------------------- */
 .menucard
