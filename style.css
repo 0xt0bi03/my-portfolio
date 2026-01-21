@@ -43,6 +43,10 @@
 *{
     font-family: aquarius;
 }
+* p:hover
+{
+    cursor: default;
+}
 
 /* BODY */
 body
