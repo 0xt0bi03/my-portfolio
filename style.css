@@ -23,7 +23,7 @@
     src: url(fonts/Agave-Regular.ttf)format(truetype);
 }
 @font-face {
-      font-family: 'dina';
+      font-family: dina;
       src: url(fonts/DinaRemasterCollection.ttc) format('collection');
   }
 
@@ -41,7 +41,7 @@
 
 /* DEFAULT ALL SETTINGS */
 *{
-    font-family: ubuntu;
+    font-family: departure;
 }
 * p:hover
 {
