@@ -2,6 +2,8 @@
 // SECTION SWITCHING (ABOUT / SKILLS / PROJECTS / INTERESTS)
 // ==================================================
 
+
+
 const btnstate = document.querySelectorAll('.btns');
 
 const about = document.querySelector('.about');
