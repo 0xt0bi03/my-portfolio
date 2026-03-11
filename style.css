@@ -6,10 +6,12 @@
     font-family: arcade;
     src: url(fonts/arcadeclassic.regular.ttf)format(truetype);
 }
+
 @font-face {
     font-family: aquarius;
     src: url(fonts/aquarius.regular-mono.ttf)format(truetype);
 }
+
 @font-face {
     font-family: ibm;
     src: url(fonts/Ac437_IBM_BIOS.ttf)format(truetype);
