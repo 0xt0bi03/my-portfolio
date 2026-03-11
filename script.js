@@ -11,6 +11,8 @@ const skills = document.querySelector('.skills');
 const projects = document.querySelector('.projects');
 const interests = document.querySelector('.interests');
 
+
+
 // Map buttons to sections
 const connections = new Map([
   [btnstate[0], about],
@@ -19,11 +21,15 @@ const connections = new Map([
   [btnstate[3], interests]
 ]);
 
+
+
 // Default visible section
 about.style.display = 'block';
 skills.style.display = 'none';
 projects.style.display = 'none';
 interests.style.display = 'none';
+
+
 
 // Handle section switching
 btnstate.forEach(btn => {
