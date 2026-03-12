@@ -3,15 +3,12 @@
 // ==================================================
 
 
-
 const btnstate = document.querySelectorAll('.btns');
 
 const about = document.querySelector('.about');
 const skills = document.querySelector('.skills');
 const projects = document.querySelector('.projects');
 const interests = document.querySelector('.interests');
-
-
 
 // Map buttons to sections
 const connections = new Map([
