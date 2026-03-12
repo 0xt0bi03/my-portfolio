@@ -27,8 +27,6 @@ skills.style.display = 'none';
 projects.style.display = 'none';
 interests.style.display = 'none';
 
-
-
 // Handle section switching
 btnstate.forEach(btn => {
   btn.addEventListener('click', () => {
