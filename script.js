@@ -21,8 +21,6 @@ const connections = new Map([
   [btnstate[3], interests]
 ]);
 
-
-
 // Default visible section
 about.style.display = 'block';
 skills.style.display = 'none';
