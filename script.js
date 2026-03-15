@@ -66,11 +66,13 @@ menu.addEventListener('click', (e) => {
   e.stopPropagation();
 });
 
+
 // Close menu when clicking outside (overlay)
 overlay.addEventListener('click', () => {
   menu.classList.remove('open');
   overlay.classList.remove('active');
 });
+
 
 // Close menu on ESC key
 document.addEventListener('keydown', (e) => {
