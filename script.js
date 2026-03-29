@@ -4,7 +4,6 @@
 
 
 
-
 const btnstate = document.querySelectorAll('.btns');
 
 const about = document.querySelector('.about');
