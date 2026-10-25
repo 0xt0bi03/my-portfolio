@@ -560,13 +560,13 @@ body::-webkit-scrollbar
     color: #046a39;
 }
 
-#codeforces, #gear, #theme
+#codeforces, #gear, #theme, #leetcode
 {
     display: inline-block;
     text-decoration: none;
 }
 
-#codeforces:hover, #gear:hover, #theme:hover
+#codeforces:hover, #gear:hover, #theme:hover, #leetcode:hover
 {
     color: var(--darkpurple);
     padding-left: 4px;
@@ -575,6 +575,10 @@ body::-webkit-scrollbar
     transform: translateY(-2px);
 }
 
+#leetcode
+{
+    color: #ad835a;
+}
 #codeforces
 {
     color: var(--purple);
@@ -588,6 +592,11 @@ body::-webkit-scrollbar
     color: var(--green);
 }
 
+#leetcode:hover
+{
+    color: wheat;
+    background: black;
+}
 #codeforces:hover
 {
     background-color: var(--yellow);
