@@ -93,7 +93,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid var(--fg-3);
+    border: 3px solid var(--red);
+}
+#box{
+    /* transition: ease-in-out 1s; */
+    transition: none;
 }
 
 .optbtn{
@@ -101,6 +105,10 @@ body{
     color: var(--fg-1);
     border: 2px solid;
     font-size: 15px;
+}
+
+.optbtn:active{
+    transform: scale(0.95);
 }
 
 .optbtn:nth-child(1){
@@ -145,14 +153,51 @@ body{
 
 /* content css */
 
-#container{
+.container{
     width: 95%;
+    /* background-color: black; */
+    height: 90%;
 }
 
 #headline{
     font-size: 30px;
 }
 
-#container hr{
+.container hr{
     color: var(--bg-2);
 }
+
+ #about{
+    display: none;
+ }
+ /* #projects{
+    display: none;
+ } */
+
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 30px;
+    scrollbar-width: none;
+    align-items: center;
+}
+
+.pjt{
+    width: 90%;
+    height: 200px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border: 2px solid var(--bg-2);
+}
+
+
+
+ /* ------------------------------------------------------------------------------------ */
+ /* styling */
+
+ .myname:nth-child(1){color: var(--red);}
+ .myname:nth-child(2){color: var(--yellow);}
+ .myname:nth-child(3){color: var(--aqua);}
+ .myname:nth-child(4){color: var(--blue);}

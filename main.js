@@ -1,16 +1,71 @@
+const gruvbox = {
+  bgHard: "#1d2021",
+  bg: "#282828",
+  bgSoft: "#32302f",
+  bg1: "#3c3836",
+  bg2: "#504945",
 
-// const buttons = document.querySelectorAll(".legend button");
+  grey1: "#665c54",
+  grey2: "#7c6f64",
+  grey3: "#928374",
+  grey4: "#a89984",
 
-// buttons.forEach(btn => {
+  fg4: "#bdae93",
+  fg3: "#d5c4a1",
+  fg2: "#ebdbb2",
+  fg1: "#fbf1c7",
 
-//     btn.addEventListener("mouseenter", () => {
-//         btn.style.backgroundColor = "#fb4934";
-//         btn.style.color = "#2e2e2e";
-//     });
+  red: "#fb4934",
+  redDark: "#cc241d",
 
-//     btn.addEventListener("mouseleave", () => {
-//         btn.style.backgroundColor = "#2e2e2e";
-//         btn.style.color = "#ebdbb2";
-//     });
+  orange: "#fe8019",
+  orangeDark: "#d65d0e",
 
-// });
+  yellow: "#fabd2f",
+  yellowDark: "#d79921",
+
+  green: "#b8bb26",
+  greenDark: "#98971a",
+
+  aqua: "#8ec07c",
+  aquaDark: "#689d6a",
+
+  blue: "#83a598",
+  blueDark: "#458588",
+
+  purple: "#d3869b",
+  purpleDark: "#b16286"
+};
+
+const box = document.getElementById("box");
+const container = document.getElementById("container");
+
+// display elements
+const about = document.getElementById("about");
+const projects = document.getElementById("projects");
+
+projects.style.display = "none";
+// const tabs = {about, projects};
+
+
+
+const buttons = document.querySelectorAll(".legend button");
+
+function changes(btn) {
+  const color = getComputedStyle(btn).borderColor;
+  box.style.borderColor = color;
+  if(btn.textContent == "About"){
+    projects.style.display = "none";
+    about.style.display = "block";
+  }
+  else if(btn.textContent == "Projects"){
+    about.style.display = "none";
+    projects.style.display = "flex";
+  }
+
+
+}
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => changes(btn));
+});
