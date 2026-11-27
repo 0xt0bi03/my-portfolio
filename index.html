@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Tobi</title>
   <link rel="stylesheet" href="style.css" />
 </head>
   <div id="mainframe">
     <fieldset id="box">
       <legend class="legend" align="right">
-        <button class="optbtn">About</button>
-        <button class="optbtn">Projects</button>
-        <button class="optbtn">Blog</button>
-        <button class="optbtn">Contacts</button>
-        <button class="optbtn">Socials</button>
+        <button class="optbtn" data-tab="about">Tobi</button>
+        <button class="optbtn" data-tab="projects">Projects</button>
+        <button class="optbtn" data-tab="blog">Blog</button>
+        <button class="optbtn" data-tab="contact">Msg Me</button>
+        <!-- <button class="optbtn" data-tab="socials">Socials</button> -->
       </legend>
 
+      <div class="container" id="intro">
+        <h1>Hey, I'm Tobi.</h1>
+        <p>Future Computer Engineer, Hacker and a Technologist.</p>
+        <p>I create software.</p>
+      </div>
       
       <div class="container" id="about">
         <p> <span id="headline">I'm <span class="myname">T</span><span  class="myname">o</span><span  class="myname">b</span><span  class="myname">i</span>, </span>from India.</p>
@@ -26,36 +31,65 @@
         <!-- <br> -->
          <hr>
         <!-- <p>I am a vis</p> -->
-        <p>> I started programming in Python at the age of 18. I used to make some 2D games in pygame during my high school.</p>
-        <p>> I have a bachelor's degree, not in Computer Science, but i found myself obsessed with technology and computers, that made me get into programming.</p>
-        <p>> I am a person who believes one can achieve anything by putting right effort in right direction.</p>
-        <p>> I play chess, I read books, I take care of my health and I learn everyday.</p>
+        <p style="color: #fe8019;">> I started programming in Python at the age of 18. I used to make some 2D games in pygame during my high school.</p>
+        <p style="color: #fabd2f;">> I have a bachelor's degree, not in Computer Science, but i found myself obsessed with technology and computers, that made me get into programming.</p>
+        <p style="color: #b8bb26;">> I am a person who believes one can achieve anything by putting right effort in right direction.</p>
+        <p style="color: #83a598;">> I play chess, I read books, I take care of my health and I learn everyday.</p>
 
       </div>
 
-      <div class="container" id="projects">
+      <div class="container" id="projects">     
         <div class="pjt">
           <div class="left">
             <h1>Project 1</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci pariatur earum repellendus, ea excepturi iusto error alias perferendis minima fuga facilis accusantium? Nesciunt facilis inventore et amet, est vel fugit.</p>
           </div>
           <div class="right">
-            <button>Github link</button>
+            <button>Github</button>
           </div>
         </div>
-        <div class="pjt"></div>
-        <div class="pjt"></div>
-        <div class="pjt"></div>
-        <div class="pjt"></div>
-        <div class="pjt"></div>
-        <div class="pjt"></div>
-        <div class="pjt"></div>
-        <div class="pjt"></div>
-        <div class="pjt"></div>
-        <div class="pjt"></div>
-
-
+        
+        <div class="pjt">
+          <div class="left">
+            <h1>Project 2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci pariatur earum repellendus, ea excepturi iusto error alias perferendis minima fuga facilis accusantium? Nesciunt facilis inventore et amet, est vel fugit.</p>
+          </div>
+          <div class="right">
+            <button>Github</button>
+          </div>
+        </div>
+        <div class="pjt">
+          <div class="left">
+            <h1>Project 3</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci pariatur earum repellendus, ea excepturi iusto error alias perferendis minima fuga facilis accusantium? Nesciunt facilis inventore et amet, est vel fugit.</p>
+          </div>
+          <div class="right">
+            <button>Github</button>
+          </div>
+        </div>
+        <div class="pjt">
+          <div class="left">
+            <h1>Project 4</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci pariatur earum repellendus, ea excepturi iusto error alias perferendis minima fuga facilis accusantium? Nesciunt facilis inventore et amet, est vel fugit.</p>
+          </div>
+          <div class="right">
+            <button>Github</button>
+          </div>
+        </div>
+        many more coming soon...
       </div>
+
+      <div class="container" id="blog">
+      </div>
+
+      <div class="container" id="contact">
+          <button class="cnts" id="gmail">Gmail</button>
+          <button class="cnts" id="reddit">Reddit</button>
+          <button class="cnts" id="twitter">Twitter</button>
+      </div>
+      
+
+
 
     </fieldset>
   </div>

@@ -38,35 +38,27 @@ const gruvbox = {
 };
 
 const box = document.getElementById("box");
-const container = document.getElementById("container");
-
-// display elements
-const about = document.getElementById("about");
-const projects = document.getElementById("projects");
-
-about.style.display = "block";
-projects.style.display = "none";
-// const tabs = {about, projects};
-
-
-
 const buttons = document.querySelectorAll(".legend button");
+const sections = document.querySelectorAll(".container");
+
+function showTab(id) {
+  const target = document.getElementById(id);
+//   if (!target) return false;            // Blog/Socials/Contact don't exist yet
+
+  sections.forEach(s => (s.style.display = "none"));
+  target.style.display = id === "about" ? "block" : "flex";
+  return true;
+}
 
 function changes(btn) {
-  const color = getComputedStyle(btn).borderColor;
-  box.style.borderColor = color;
-  if(btn.textContent == "About"){
-    projects.style.display = "none";
-    about.style.display = "block";
-  }
-  else if(btn.textContent == "Projects"){
-    about.style.display = "none";
-    projects.style.display = "flex";
-  }
-
-
+  if (!showTab(btn.dataset.tab)) return; // no section yet, so change nothing
+  box.style.borderColor = getComputedStyle(btn).borderColor;
 }
+
+// initial state: only the intro is visible
+showTab("intro");
 
 buttons.forEach(btn => {
   btn.addEventListener("click", () => changes(btn));
 });
+
