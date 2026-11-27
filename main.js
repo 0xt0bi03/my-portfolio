@@ -44,6 +44,7 @@ const container = document.getElementById("container");
 const about = document.getElementById("about");
 const projects = document.getElementById("projects");
 
+about.style.display = "block";
 projects.style.display = "none";
 // const tabs = {about, projects};
 
