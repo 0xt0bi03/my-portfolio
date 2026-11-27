@@ -79,4 +79,23 @@ body{
 .optbtn{
     background-color: var(--bg);
     color: var(--fg-1);
+    border: 2px solid;
 }
+
+.optbtn:nth-child(1){
+    border-color: var(--red);
+}
+.optbtn:nth-child(2){
+    border-color: var(--orange);
+}
+.optbtn:nth-child(3){
+    border-color: var(--yellow);
+}
+.optbtn:nth-child(4){
+    border-color: var(--aqua);
+}
+.optbtn:nth-child(5){
+    border-color: var(--blue);
+}
+
+
