@@ -180,10 +180,6 @@ body{
     flex-direction: column;
     height: 90%;
 }
-/* #projects{
-    display: none;
-    } */
-    
     
 #projects{
     display: flex;
@@ -204,10 +200,33 @@ body{
 #contact button{
     background-color: var(--bg);
     color: var(--fg-1);
-    font-size: 25px;
+    font-size: 20px;
     width: 125px;
     height: 35px;
     border: 3px solid var(--purple);
+}
+#contact button:active{
+    transform: scale(0.95);
+}
+
+#blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#frame{
+    width: 95%;
+    height: 95%;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.blogbox{
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px dotted var(--grey-1);
 }
 
 
