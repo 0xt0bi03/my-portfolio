@@ -48,6 +48,22 @@
   --purple-dark: #b16286;
 }
 
+@font-face {
+    font-family: "agave";
+    src: url(./fonts/Agave-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "departure";
+    src: url(./fonts/DepartureMono-Regular.woff) format('woff');
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Main css down*/
+
+*{
+    font-family: 'agave';
+}
 
 body{
     background-color: var(--bg);
@@ -64,22 +80,27 @@ body{
     width: 800px;
     height: 600px;
     box-sizing: border-box;
-    border: 2px solid aqua;
+    /* border: 2px solid aqua; */
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#options{
+#box{
     width: 95%;
     height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--fg-3);
 }
 
 .optbtn{
     background-color: var(--bg);
     color: var(--fg-1);
     border: 2px solid;
+    font-size: 15px;
 }
 
 .optbtn:nth-child(1){
@@ -98,4 +119,40 @@ body{
     border-color: var(--blue);
 }
 
+.optbtn:nth-child(1):hover{
+    /* border-color: var(--red); */
+    background-color: var(--red);
+    color: var(--bg);
+}
+.optbtn:nth-child(2):hover{
+    background-color: var(--orange);
+    color: var(--bg);
+}
+.optbtn:nth-child(3):hover{
+    background-color: var(--yellow);
+    color: var(--bg);
+}
+.optbtn:nth-child(4):hover{
+    background-color: var(--aqua);
+    color: var(--bg);
+}
+.optbtn:nth-child(5):hover{
+    background-color: var(--blue);
+    color: var(--bg);
+}
 
+/* ----------------------------------------------------------------------------------- */
+
+/* content css */
+
+#container{
+    width: 95%;
+}
+
+#headline{
+    font-size: 30px;
+}
+
+#container hr{
+    color: var(--bg-2);
+}
